@@ -76,9 +76,9 @@ export default function HeaderComponent() {
       </Box>
 
       {!isLoading && !(isScreenSmall && user) && (
-        <PrimerHeader.Item sx={{ ml: 3, mr: [1, , 3] }}>
-          <SearchBarButton />
-          <SearchIconButton />
+        <PrimerHeader.Item sx={{ ml: 3, mr: [1, null, 3] }}>
+          <SearchBarButton id="search-bar-button" />
+          <SearchIconButton id="search-icon-button" />
         </PrimerHeader.Item>
       )}
 
